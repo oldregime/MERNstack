@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0;
+        }
+        
+        img {
+            max-width: 500px;
+            border-radius: 8px;
+        }
+        
+        figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+        
+        .paragraph1 {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            text-align: left;
+        }
+        
+        .paragraph2 {
+            font-family: 'Verdana', sans-serif;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        
+        .styled-button {
+            display: block;
+            margin: 30px auto;
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            border: 2px solid #2E7D32;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .styled-button:hover {
+            background-color: #2E7D32;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        form {
+            width: 80%;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .submit-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Assignment Page</h1>
+    
+    <p class="paragraph1">
+        This is the first paragraph of my HTML and CSS assignment. It uses Georgia font with increased line height and left alignment. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac nisi vel nunc vehicula fringilla.
+        Donec sodales ligula vel mauris facilisis, vel feugiat tortor vulputate.
+    </p>
+    
+    <p class="paragraph2">
+        This is the second paragraph with different styling. It uses Verdana font with a different line height and justified text alignment.
+        Phasellus at consequat lectus. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Fusce nec augue sit amet lorem faucibus tempor.
+    </p>
+    
+    <div class="image-container">
+        <img src="https://picsum.photos/500/300" alt="Sample image">
+        <figcaption>A beautiful landscape image centered on the page</figcaption>
+    </div>
+    
+    <button class="styled-button">Click Me</button>
+    
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    </table>
+    
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</body>
+</html>
